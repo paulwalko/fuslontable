@@ -23,8 +23,7 @@ for table in tables:
         continue
 
     r = requests.get("https://fusiontables.googleusercontent.com/exporttable?query=select+*+from+{}&o=zip".format(table))
-    print(r.status_code)
-    if r.status_code != 200:
+    if r.status_code == 200:
         print("Saving ./data/{}".format(data_file))
         with open("./data/{}".format(data_file), 'wb') as f:
             f.write(r.content)
