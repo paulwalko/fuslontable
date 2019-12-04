@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 import os
+import sys
+import time
 
 import requests
 
@@ -9,25 +11,29 @@ with open('tables.txt') as f:
     tables = f.readlines()
 tables = [i.strip() for i in tables]
 
-tables_error = []
-with open('tables_error.txt') as f:
-    tables_error = f.readlines()
-tables_error = [i.strip() for i in tables_error]
-
 
 existing_data = os.listdir('./data')
+count = 0
 for table in tables:
-    data_file = "{}.zip".format(table)
+    print("COUNT: {}".format(count))
+    count += 1
 
-    if table in tables_error or data_file in existing_data:
+    data_html = "{}.html".format(table)
+
+    if data_html in existing_data:
         continue
 
-    r = requests.get("https://fusiontables.googleusercontent.com/exporttable?query=select+*+from+{}&o=zip".format(table))
-    if r.status_code == 200:
-        print("Saving ./data/{}".format(data_file))
-        with open("./data/{}".format(data_file), 'wb') as f:
-            f.write(r.content)
-    else:
-        print("Adding {} to tables_error.txt".format(table))
-        with open('./tables_error.txt', 'a') as f:
-            f.write("{}\n".format(table))
+    
+    r = requests.get("https://fusiontables.googleusercontent.com/embedviz?q=select+*+from+{}&viz=CARD".format(table))
+    while r.status_code == 429:
+        print('Too Many Requests! :(')
+        time.sleep(10 * 60)
+
+        r = requests.get("https://fusiontables.googleusercontent.com/embedviz?q=select+*+from+{}&viz=CARD".format(table))
+
+    if r.status_code != 200:
+        print("Unexpected Code: {}".format(r.status_code))
+
+    print("Saving ./data/{}".format(data_html))
+    with open("./data/{}".format(data_html), 'w') as f:
+        f.write(r.text)

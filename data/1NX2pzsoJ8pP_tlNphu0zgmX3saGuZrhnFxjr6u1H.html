@@ -1,0 +1,815 @@
+<!DOCTYPE HTML><html><head>
+<title>Adventure Program Wait Times - Google Fusion Tables</title>
+<style type="text/css">
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+    </style></head>
+<body><table cellpadding="0" cellspacing="0"><tr><td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 1<br>
+<b>NAME:</b> SCUBA<br>
+<b>LAT_DD:</b> 37.916518<br>
+<b>LONG_DD:</b> -81.144869<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Aquatics<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/ThePools.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.9164009,-81.145401&amp;ll=<br>
+<b>Icon2:</b> images/icons/ThePools.png<br>
+<b>SPName:</b> Buceo<br>
+<b>SPArea:</b> Deportes Acuaticos<br>
+<b>FRName:</b> Plongée Sous Marine<br>
+<b>FRArea:</b> Sports Aquatiques
+</div></td> <td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 2<br>
+<b>NAME:</b> The Park<br>
+<b>LAT_DD:</b> 37.917841<br>
+<b>LONG_DD:</b> -81.149186<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Extreme Sports<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/ThePark.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.9179001,-81.1492996&amp;ll=<br>
+<b>Icon2:</b> images/icons/ThePark.png<br>
+<b>SPName:</b> El Parque<br>
+<b>SPArea:</b> Deportes Extremos<br>
+<b>FRName:</b> Le Parc<br>
+<b>FRArea:</b> Sports extrêmes
+</div></td></tr> <tr><td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 3<br>
+<b>NAME:</b> The Trax<br>
+<b>LAT_DD:</b> 37.918803<br>
+<b>LONG_DD:</b> -81.153581<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Extreme Sports<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/TheTrax.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.9188004,-81.1541977&amp;ll=<br>
+<b>Icon2:</b> images/icons/TheTrax.png<br>
+<b>SPName:</b> El Trax<br>
+<b>SPArea:</b> Deportes Extremos<br>
+<b>FRName:</b> Les Routes<br>
+<b>FRArea:</b> Sports extrêmes
+</div></td> <td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 4<br>
+<b>NAME:</b> Action Point - Canopy Tour<br>
+<b>LAT_DD:</b> 37.918608<br>
+<b>LONG_DD:</b> -81.121153<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Aerial Sports<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/TheCanopy.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.918896,-81.122082&amp;ll=<br>
+<b>Icon2:</b> images/icons/TheCanopy.png<br>
+<b>SPName:</b> Punto de accion - Canopy<br>
+<b>SPArea:</b> Deportes Aereos<br>
+<b>FRName:</b> Point d'Action - Canopée<br>
+<b>FRArea:</b> Sports aériens
+</div></td></tr> <tr><td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 5<br>
+<b>NAME:</b> The Bows<br>
+<b>LAT_DD:</b> 37.911665<br>
+<b>LONG_DD:</b> -81.15437<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Shooting Sports and Archery<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/TheBows.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.9118996,-81.1542969&amp;ll=<br>
+<b>Icon2:</b> images/icons/TheBows.png<br>
+<b>SPName:</b> Los Arcos<br>
+<b>SPArea:</b> Deportes de Tiro<br>
+<b>FRName:</b> Les Arcs<br>
+<b>FRArea:</b> Sports de Tir
+</div></td> <td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 6<br>
+<b>NAME:</b> The Barrels - West<br>
+<b>LAT_DD:</b> 37.906637<br>
+<b>LONG_DD:</b> -81.146218<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Shooting Sports and Archery<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/TheBarrels.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.9063988,-81.1461029&amp;ll=<br>
+<b>Icon2:</b> images/icons/TheBarrels.png<br>
+<b>SPName:</b> Los Barriles - Oeste<br>
+<b>SPArea:</b> Deportes de Tiro<br>
+<b>FRName:</b> Les Tonneaux - Ouest<br>
+<b>FRArea:</b> Sports de Tir
+</div></td></tr> <tr><td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 7<br>
+<b>NAME:</b> The Ropes<br>
+<b>LAT_DD:</b> 37.904616<br>
+<b>LONG_DD:</b> -81.125584<br>
+<b>WaitTime:</b> <br>
+<b>Status:</b> CLOSED<br>
+<b>Area:</b> Aerial Sports<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/TheRopes.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.9039993,-81.1257019&amp;ll=<br>
+<b>Icon2:</b> images/icons/TheRopes.png<br>
+<b>SPName:</b> Las Cuerdas<br>
+<b>SPArea:</b> Deportes Aereos<br>
+<b>FRName:</b> Les Cordes<br>
+<b>FRArea:</b> Sports aériens
+</div></td> <td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 8<br>
+<b>NAME:</b> Low Gear<br>
+<b>LAT_DD:</b> 37.902574<br>
+<b>LONG_DD:</b> -81.124498<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Extreme Sports<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/LowHighGear.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.9025002,-81.1242981&amp;ll=<br>
+<b>Icon2:</b> images/icons/LowHighGear.png<br>
+<b>SPName:</b> Marcha Baja<br>
+<b>SPArea:</b> Deportes Extremos<br>
+<b>FRName:</b> Faible Vitesse<br>
+<b>FRArea:</b> Sports Extrêmes
+</div></td></tr> <tr><td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 9<br>
+<b>NAME:</b> The Rocks<br>
+<b>LAT_DD:</b> 37.905368<br>
+<b>LONG_DD:</b> -81.121279<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Climbing<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/TheRocks.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.9049988,-81.1212006&amp;ll=<br>
+<b>Icon2:</b> images/icons/TheRocks.png<br>
+<b>SPName:</b> Los Rocas<br>
+<b>SPArea:</b> Alpinismo<br>
+<b>FRName:</b> Les Roches<br>
+<b>FRArea:</b> Escalade
+</div></td> <td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 11<br>
+<b>NAME:</b> The Canopy<br>
+<b>LAT_DD:</b> 37.9213982<br>
+<b>LONG_DD:</b> -81.1100006<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Aerial Sports<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/TheCanopy.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.9213982,-81.1100006&amp;ll=<br>
+<b>Icon2:</b> images/icons/TheCanopy.png<br>
+<b>SPName:</b> El Canopy<br>
+<b>SPArea:</b> Deportes Aereos<br>
+<b>FRName:</b> La Canopée<br>
+<b>FRArea:</b> Sports Aériens
+</div></td></tr> <tr><td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 12<br>
+<b>NAME:</b> Big Zip<br>
+<b>LAT_DD:</b> 37.913376<br>
+<b>LONG_DD:</b> -81.122027<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Aerial Sports<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/TheZip.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.913356,-81.123085&amp;ll=<br>
+<b>Icon2:</b> images/icons/TheZip.png<br>
+<b>SPName:</b> Gran Tirolesa<br>
+<b>SPArea:</b> Deportes Aereos<br>
+<b>FRName:</b> La Grande Tyrolienne<br>
+<b>FRArea:</b> Sports Aériens
+</div></td> <td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 13<br>
+<b>NAME:</b> Joe Crafton Sportsman's Complex<br>
+<b>LAT_DD:</b> 37.915499<br>
+<b>LONG_DD:</b> -81.12067<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Shooting Sports and Archery<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/TheBarrels.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.915524,-81.121271&amp;ll=<br>
+<b>Icon2:</b> images/icons/TheBarrels.png<br>
+<b>SPName:</b> Complejo deportivo de Joe Crafton<br>
+<b>SPArea:</b> Deportes de Tiro<br>
+<b>FRName:</b> Complexe Sportif de Joe Crafton<br>
+<b>FRArea:</b> Sports de Tir
+</div></td></tr> <tr><td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 14<br>
+<b>NAME:</b> The Barrels - East<br>
+<b>LAT_DD:</b> 37.906486<br>
+<b>LONG_DD:</b> -81.137178<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Shooting Sports and Archery<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/TheBarrels.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.9061012,-81.1387024&amp;ll=<br>
+<b>Icon2:</b> images/icons/TheBarrels.png<br>
+<b>SPName:</b> Los Barriles - Este<br>
+<b>SPArea:</b> Deportes de Tiro<br>
+<b>FRName:</b> Les Tonneaux - Est<br>
+<b>FRArea:</b> Sports de Tir
+</div></td> <td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 15<br>
+<b>NAME:</b> Gateway &amp; Legacy Zip<br>
+<b>LAT_DD:</b> 37.9139818<br>
+<b>LONG_DD:</b> -81.1269642<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Aerial Sports<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/TheZip.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.913251,-81.125571&amp;ll=<br>
+<b>Icon2:</b> images/icons/TheZip.png<br>
+<b>SPName:</b> Tirolesas "Legado" y "Portico"<br>
+<b>SPArea:</b> Deportes Aereos<br>
+<b>FRName:</b> Tyrolienne "Passerelle" et "Héritage"<br>
+<b>FRArea:</b> Sports Aériens
+</div></td></tr> <tr><td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 16<br>
+<b>NAME:</b> Kayak<br>
+<b>LAT_DD:</b> 37.908745<br>
+<b>LONG_DD:</b> -81.122057<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Aquatics<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/ThePools.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.9099998,-81.1216965&amp;ll=<br>
+<b>Icon2:</b> images/icons/ThePools.png<br>
+<b>SPName:</b> Kayak<br>
+<b>SPArea:</b> Deportes Acuaticos<br>
+<b>FRName:</b> Kayak<br>
+<b>FRArea:</b> Sports Aquatiques
+</div></td> <td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 17<br>
+<b>NAME:</b> Standup Paddleboarding<br>
+<b>LAT_DD:</b> 37.915202<br>
+<b>LONG_DD:</b> -81.137305<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Aquatics<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/ThePools.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.9149017,-81.1373978&amp;ll=<br>
+<b>Icon2:</b> images/icons/ThePools.png<br>
+<b>SPName:</b> Surf de remo (SUP)<br>
+<b>SPArea:</b> Deportes Acuaticos<br>
+<b>FRName:</b> Paddle / Stand Up Paddle (both are working in French)<br>
+<b>FRArea:</b> Sports Aquatiques
+</div></td></tr> <tr><td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 19<br>
+<b>NAME:</b> Boulder Cove<br>
+<b>LAT_DD:</b> 37.914215<br>
+<b>LONG_DD:</b> -81.133184<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Climbing<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/TheRocks.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.9141998,-81.1332016&amp;ll=<br>
+<b>Icon2:</b> images/icons/TheRocks.png<br>
+<b>SPName:</b> Boulder Cove<br>
+<b>SPArea:</b> Alpinismo<br>
+<b>FRName:</b> Crique Rocheuse<br>
+<b>FRArea:</b> Escalade
+</div></td> <td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 20<br>
+<b>NAME:</b> Water Reality<br>
+<b>LAT_DD:</b> 37.916002<br>
+<b>LONG_DD:</b> -81.135991<br>
+<b>WaitTime:</b> <br>
+<b>Status:</b> CLOSED<br>
+<b>Area:</b> Aquatics<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/ThePools.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.915778,-81.136333&amp;ll=<br>
+<b>Icon2:</b> images/icons/ThePools.png<br>
+<b>SPName:</b> Realidad del Agua<br>
+<b>SPArea:</b> Deportes Acuaticos<br>
+<b>FRName:</b> Parcours Aquatique du Combattant<br>
+<b>FRArea:</b> Sports Aquatiques
+</div></td></tr> <tr><td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 21<br>
+<b>NAME:</b> Action Point - Mountain Biking<br>
+<b>LAT_DD:</b> 37.918414<br>
+<b>LONG_DD:</b> -81.120887<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Extreme Sports<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/LowHighGear.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.91861,-81.1208056&amp;ll=<br>
+<b>Icon2:</b> images/icons/LowHighGear.png<br>
+<b>SPName:</b> Punto de accion - ciclismo de montana<br>
+<b>SPArea:</b> Deportes Extremos<br>
+<b>FRName:</b> Point d'action - VTT<br>
+<b>FRArea:</b> Sports Extrêmes
+</div></td> <td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 22<br>
+<b>NAME:</b> Action Point - BMX<br>
+<b>LAT_DD:</b> 37.91721<br>
+<b>LONG_DD:</b> -81.120809<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Extreme Sports<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/TheTrax.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.917361111111106,-81.12080555555555&amp;ll=<br>
+<b>Icon2:</b> images/icons/TheTrax.png<br>
+<b>SPName:</b> Punto de accion - BMX<br>
+<b>SPArea:</b> Deportes Extremos<br>
+<b>FRName:</b> Point d'action - BMX<br>
+<b>FRArea:</b> Sports Extrêmes
+</div></td></tr> <tr><td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 23<br>
+<b>NAME:</b> Action Point - Skateboard<br>
+<b>LAT_DD:</b> 37.917998<br>
+<b>LONG_DD:</b> -81.120998<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> Extreme Sports<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/ThePark.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.91808333333333,-81.12102777777777&amp;ll=<br>
+<b>Icon2:</b> images/icons/ThePark.png<br>
+<b>SPName:</b> Punto de accion - skateboard<br>
+<b>SPArea:</b> Deportes Extremos<br>
+<b>FRName:</b> Point d'action - Skateboard<br>
+<b>FRArea:</b> Sports Extrêmes
+</div></td> <td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 25<br>
+<b>NAME:</b> River Rafting<br>
+<b>LAT_DD:</b> 37.918928<br>
+<b>LONG_DD:</b> -81.138065<br>
+<b>WaitTime:</b> 0<br>
+<b>Status:</b> OPEN<br>
+<b>Area:</b> River Rafting<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/SBRLogo2.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.918928,-81.138065&amp;ll=<br>
+<b>Icon2:</b> images/icons/SBRLogo2.png<br>
+<b>SPName:</b> Rafting en el rio<br>
+<b>SPArea:</b> Rafting en el rio<br>
+<b>FRName:</b> Descente de rivière<br>
+<b>FRArea:</b> Descente de Rivière
+</div></td></tr> <tr><td><div class="googft-card-view" style="font-family:sans-serif;width:450px;padding:4px;border:1px solid #ccc;overflow:hidden">
+<b>ID #:</b> 27<br>
+<b>NAME:</b> Team Standup Paddleboarding<br>
+<b>LAT_DD:</b> 37.915832<br>
+<b>LONG_DD:</b> -81.134469<br>
+<b>WaitTime:</b> <br>
+<b>Status:</b> CLOSED<br>
+<b>Area:</b> Aquatics<br>
+<b>Icon:</b> http://jamboreeadventureprograms.org/images/icons/ThePools.png<br>
+<b>Cards:</b> {template .contents}
+<div class="googft-info-window" style="font-family:Open Sans,sans-serif">
+<img height="50">
+<hr size="2" color="#ff9900">
+<font size="4" color="black"><b>{$data.formatted.NAME}</b></font><br>
+<font size="2" color="#ff9900"><em>{$data.formatted.Area}</em></font><br>
+<hr size="2" color="#ff9900">
+<font size="1.5">Estimated Wait Time:</font><br>
+{if ($data.value['Status'] == 'CLOSED' or $data.value['Status'] == 'WEATHER DELAY')}
+ <p> </p>
+  {else}
+  <font size="2"><b>{$data.formatted.WaitTime}</b> MINUTES</font>
+  {/if}
+<hr size="1" color="black">
+<font size="2"><b>{$data.formatted.Status}</b></font>
+<hr size="1" color="black">
+<font size="2"><a href="%7B$data.formatted.Directions%7D">Get Directions</a></font>
+<hr size="1" color="black">
+</div>
+{/template}<br>
+<b>Directions:</b> http://maps.google.com/maps?daddr=37.915832,-81.134469&amp;ll=<br>
+<b>Icon2:</b> images/icons/ThePools.png<br>
+<b>SPName:</b> images/icons/ThePools.png<br>
+<b>SPArea:</b> Equipo surf de remo<br>
+<b>FRName:</b> Deportes Acuaticos<br>
+<b>FRArea:</b> Équipe Paddle
+</div></td></tr></table></body></html>
